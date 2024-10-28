@@ -1,4 +1,4 @@
-package com.joaquin.restaurante_crud.dtos;
+package com.joaquin.restaurante_crud.dtos.menusDTOs;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateMenuDTO {
-    private String menuName;
-    private Long restaurantId
+    private String name;
+    private Integer restaurantId;
 }
+

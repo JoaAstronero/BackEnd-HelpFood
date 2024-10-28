@@ -1,4 +1,4 @@
-package com.joaquin.restaurante_crud.dtos;
+package com.joaquin.restaurante_crud.dtos.userDTOs;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDTO {
-    private int id;
+    private Integer id;
     private String name;
     private String email;
 }

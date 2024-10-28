@@ -1,6 +1,5 @@
-package com.joaquin.restaurante_crud.dtos;
+package com.joaquin.restaurante_crud.dtos.restaurantsDTOs;
 
-import com.joaquin.restaurante_crud.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +10,7 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RestaurantDTO {
-    private int id;
+    private Integer id;
     private String name;
     private String description;
     private LocalTime openingHours;

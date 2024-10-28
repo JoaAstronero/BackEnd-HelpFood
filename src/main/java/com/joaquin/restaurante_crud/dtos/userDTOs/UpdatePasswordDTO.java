@@ -1,4 +1,4 @@
-package com.joaquin.restaurante_crud.dtos;
+package com.joaquin.restaurante_crud.dtos.userDTOs;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

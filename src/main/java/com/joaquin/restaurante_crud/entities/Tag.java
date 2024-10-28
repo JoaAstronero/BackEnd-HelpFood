@@ -11,18 +11,14 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "menus")
-public class Menu {
+@Table(name = "tags")
+public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "restaurant_id",nullable = false)
-    private Restaurant restaurant;
-
-    @OneToMany(mappedBy = "menu",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "tags")
     private List<Dish> dishes;
 }
