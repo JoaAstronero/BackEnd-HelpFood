@@ -11,7 +11,7 @@ public class UserMapper {
         }
         UserDTO userDTO = new UserDTO();
         userDTO.setId(user.getId());
-        userDTO.setName(user.getName());
+        userDTO.setUsername(user.getUsername());
         userDTO.setEmail(user.getEmail());
         return userDTO;
     }
@@ -21,7 +21,7 @@ public class UserMapper {
         }
         User user = new User();
         user.setId(signInUserDTO.getId());
-        user.setName(signInUserDTO.getName());
+        user.setUsername(signInUserDTO.getUsername());
         user.setEmail(signInUserDTO.getEmail());
         user.setPassword(signInUserDTO.getPassword());
         return user;

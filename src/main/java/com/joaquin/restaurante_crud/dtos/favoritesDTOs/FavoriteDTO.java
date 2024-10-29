@@ -1,4 +1,4 @@
-package com.joaquin.restaurante_crud.dtos.userDTOs;
+package com.joaquin.restaurante_crud.dtos.favoritesDTOs;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserDTO {
+public class FavoriteDTO {
     private Integer id;
-    private String username;
-    private String email;
+    private Integer userId;
+    private Integer restauranteId;
 }
